@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Phần đầu trang chứa tiêu đề và thanh điều hướng -->
     <header>
+        <!-- Tiêu đề chính của trang -->
         <h1>Cửa hàng DVD BK</h1>
+        <!-- Thanh điều hướng chính -->
         <nav>
             <ul>
+                <!-- Liên kết nội bộ đến các section trên cùng trang -->
                 <li><a href="#home">Trang chủ</a></li>
                 <li><a href="#products">Sản phẩm</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
@@ -18,18 +22,25 @@
         </nav>
     </header>
 
+    <!-- Nội dung chính của trang -->
     <main>
+        <!-- Section "home" — phần chào mừng / giới thiệu -->
         <section id="home">
             <h2>Chào mừng đến với Cửa hàng DVD BK</h2>
+            <!-- Mô tả ngắn về cửa hàng / nội dung -->
             <p>Những DVD nên xem khi học giải tích + đại số.</p>
         </section>
 
+        <!-- Section "products" — danh sách sản phẩm -->
         <section id="products">
             <h2>Danh sách sản phẩm</h2>
             
+            <!-- Container chứa các sản phẩm; dùng để bọc nhiều article product-item -->
             <div class="products-container">
+                <!-- Mỗi sản phẩm được bọc trong thẻ article để có ý nghĩa nội dung độc lập -->
                 <article class="product-item">
-                    <img src="https://static-images.vnncdn.net/files/publish/2022/10/14/39217561-209555833247182-455335450421231616-n-1734.jpg?width=0&s=4lmb0uZiT3Ix3mid5cih0A" alt="DVD Giải tích Nguyễn Xuân Thảo" class="product-image">
+                    <!-- Hình đại diện sản phẩm; src trỏ tới ảnh, alt mô tả ảnh khi ảnh không hiển thị -->
+                    <img src="https://static-images.vnncdn.net/files/publish/2022/10/14/39217561-209555833247182-455335450421231616-n-1734.jpg?width=0&s=4lmb0uZiT3Ix3mid5cih0A" alt="DVD Giải tích N[...]
                     <h3 class="product-name">Lofi tổng hợp bài giảng giải tích Nguyễn Xuân Thảo</h3>
                     <p class="product-author">Tác giả: Nguyễn Xuân Thảo</p>
                     <p class="product-description">Thấm đậm từng câu chữ</p>
@@ -37,7 +48,9 @@
                 </article>
 
                 <article class="product-item">
-                        <img src="https://static-images.vnncdn.net/files/publish/2022/10/14/39217561-209555833247182-455335450421231616-n-1734.jpg?width=0&s=4lmb0uZiT3Ix3mid5cih0A" alt="DVD Đại số Nguyễn Xuân Thảo" class="product-image">
+                        <!-- Ảnh sản phẩm thứ hai -->
+                        <img src="https://static-images.vnncdn.net/files/publish/2022/10/14/39217561-209555833247182-455335450421231616-n-1734.jpg?width=0&s=4lmb0uZiT3Ix3mid5cih0A" alt="DVD Đại s��[...]
+                        <!-- Tên sản phẩm thứ hai -->
                         <h3 class="product-name">LOFI tổng hợp bài giảng đại số Nguyễn Xuân Thảo</h3>
                         <p class="product-author">Tác giả: Nguyễn Xuân Thảo</p>
                         <p class="product-description">Thấm đậm từng câu chữ</p>
@@ -45,35 +58,49 @@
                 </article>
 
                 <article class="product-item">
-                        <img src="https://vnanet.vn/Data/Articles/2023/02/13/6581531/vna_potal_toa_dam_%E2%80%9Cchatgpt_tri_tue_nhan_tao_-_loi_ich_va_thach_thuc_doi_voi_giao_duc%E2%80%9D_stand.jpg" alt="DVD KTTT Tạ Hải Tùng" class="product-image">
+                        <!-- Ảnh sản phẩm thứ ba -->
+                        <img src="https://vnanet.vn/Data/Articles/2023/02/13/6581531/vna_potal_toa_dam_%E2%80%9Cchatgpt_tri_tue_nhan_tao_-_loi_ich_va_thach_thuc_doi_voi_giao_duc%E2%80%9D_stand.jpg" al[...]
+                        <!-- Tên sản phẩm thứ ba -->
                         <h3 class="product-name">Tổng hợp bài giảng nhập môn KTTT cực chill</h3>
                         <p class="product-author">Tác giả: Prof. Tạ Hải Tùng</p>
                         <p class="product-description">Nghe là A môn KTTT</p>
+                        <!-- Giá ghi rõ có thể thương lượng -->
                         <p class="product-price">Giá: thỏa thuận với giáo viên</p>
                 </article>
             </div>
         </section>
 
+        <!-- Section "contact" — form liên hệ -->
         <section id="contact" class="contact-section">
             <h2>Liên hệ với chúng tôi</h2>
+            <!-- Form phản hồi người dùng; class contact-form để style -->
             <form class="contact-form">
+                <!-- Nhóm trường nhập tên -->
                 <div class="form-group">
+                    <!-- Label liên kết với input qua thuộc tính for/id -->
                     <label for="name">Tên của bạn:</label>
+                    <!-- Input nhập tên người dùng; required bắt buộc nhập -->
                     <input type="text" id="name" name="name" required>
                 </div>
 
+                <!-- Nhóm trường nhập email -->
                 <div class="form-group">
                     <label for="email">Email:</label>
+                    <!-- type="email" giúp trình duyệt kiểm tra định dạng email -->
                     <input type="email" id="email" name="email" required>
                 </div>
+                <!-- Nhóm trường nhập nội dung phản hồi -->
                 <div class="form-group">
                     <label for="message">Feedback:</label>
+                    <!-- textarea cho phép nhập nhiều dòng; rows xác định chiều cao ban đầu -->
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
+                <!-- Nút gửi form; mặc định sẽ submit form lên server nếu có action -->
                 <button type="submit" class="btn-submit">Gửi</button>
             </form>
         </section>
     </main>
+    <!-- Footer chứa thông tin liên hệ và địa chỉ cửa hàng -->
     <footer>
         <p>Cửa hàng DVD BK. Địa chỉ: Số 1 Đại Cồ Việt, Hà Nội</p>
         <p>Điện thoại: 0123-456-789 | Email: info@DVDBK.com</p>
