@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Lofi tổng hợp bài giảng giải tích Nguyễn Xuân Thảo",
+    "author": "Tác giả: Nguyễn Xuân Thảo",
+    "description": "Thấm đậm từng câu chữ",
+    "price": 85000,
+    "image": "https://static-images.vnncdn.net/files/publish/2022/10/14/39217561-209555833247182-455335450421231616-n-1734.jpg?width=0&s=4lmb0uZiT3Ix3mid5cih0A"
+  },
+  {
+    "id": 2,
+    "name": "LOFI tổng hợp bài giảng đại số Nguyễn Xuân Thảo",
+    "author": "Tác giả: Nguyễn Xuân Thảo",
+    "description": "Thấm đậm từng câu chữ",
+    "price": 120000,
+    "image": "https://static-images.vnncdn.net/files/publish/2022/10/14/39217561-209555833247182-455335450421231616-n-1734.jpg?width=0&s=4lmb0uZiT3Ix3mid5cih0A"
+  },
+  {
+    "id": 3,
+    "name": "Tổng hợp bài giảng nhập môn KTTT cực chill",
+    "author": "Tác giả: Prof. Tạ Hải Tùng",
+    "description": "Nghe là A môn KTTT",
+    "price": 500000,
+    "image": "https://vnanet.vn/Data/Articles/2023/02/13/6581531/vna_potal_toa_dam_%E2%80%9Cchatgpt_tri_tue_nhan_tao_-_loi_ich_va_thach_thuc_doi_voi_giao_duc%E2%80%9D_stand.jpg"
+  }
+]

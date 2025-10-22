@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng DVD BK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cửa hàng DVD BK</h1>
+        <p class="subtitle">Trao niềm tin - Nhận tài lộc</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="intro">
+            <h2>Giới thiệu cửa hàng DVD BK</h2>
+            <p>Thành lập từ năm 2026, đây là cửa hàng bán những DVD chất lượng cao luôn được các bạn tin dùng khi muốn chìm vào giấc ngủ nhanh chóng.</p>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2>Danh sách sản phẩm</h2>
+            
+            <div class="controls-container">
+                <input type="text" id="searchInput" placeholder="Tìm DVD theo tên...">
+                <button id="addProductBtn">Thêm sản phẩm mới</button>
+            </div>
+            
+            <form id="addProductForm" class="hidden"> 
+                <h3>Thêm DVD mới</h3>
+                
+                <label for="newName">Tên DVD:</label>
+                <input type="text" id="newName" required>
+                
+                <label for="newPrice">Giá:</label>
+                <input type="number" id="newPrice" required>
+                <label for="newAuthor">Tác giả:</label>
+                <input type="text" id="newAuthor">
+                <label for="newDescription"> Mô tả:</label>
+                <input type= "text" id = "newDescription">
+                <button type="submit">Thêm</button>
+                <button type="button" id="cancelBtn">Hủy</button> 
+            </form>
+            
+            <div class="products-container" id="products-container">
+                <article class="product-item">
+                    <img src="https://static-images.vnncdn.net/files/publish/2022/10/14/39217561-209555833247182-455335450421231616-n-1734.jpg?width=0&s=4lmb0uZiT3Ix3mid5cih0A" alt="DVD Giải tích Nguyễn Xuân Thảo" class="product-image">
+                    <h3 class="product-name">Lofi tổng hợp bài giảng giải tích Nguyễn Xuân Thảo</h3>
+                    <p class="product-author">Tác giả: Nguyễn Xuân Thảo</p>
+                    <p class="product-description">Thấm đậm từng câu chữ</p>
+                    <p class="product-price">Giá: 85,000₫</p>
+                </article>
+
+                <article class="product-item">
+                        <img src="https://static-images.vnncdn.net/files/publish/2022/10/14/39217561-209555833247182-455335450421231616-n-1734.jpg?width=0&s=4lmb0uZiT3Ix3mid5cih0A" alt="DVD Đại số Nguyễn Xuân Thảo" class="product-image">
+                        <h3 class="product-name">LOFI tổng hợp bài giảng đại số Nguyễn Xuân Thảo</h3>
+                        <p class="product-author">Tác giả: Nguyễn Xuân Thảo</p>
+                        <p class="product-description">Thấm đậm từng câu chữ</p>
+                        <p class="product-price">Giá: 120,000₫</p>
+                </article>
+
+                <article class="product-item">
+                        <img src="https://vnanet.vn/Data/Articles/2023/02/13/6581531/vna_potal_toa_dam_%E2%80%9Cchatgpt_tri_tue_nhan_tao_-_loi_ich_va_thach_thuc_doi_voi_giao_duc%E2%80%9D_stand.jpg" alt="DVD KTTT Tạ Hải Tùng" class="product-image">
+                        <h3 class="product-name">Tổng hợp bài giảng nhập môn KTTT cực chill</h3>
+                        <p class="product-author">Tác giả: Prof. Tạ Hải Tùng</p>
+                        <p class="product-description">Nghe là A môn KTTT</p>
+                        <p class="product-price">Giá: thỏa thuận với giáo viên</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Đặt hàng ngay</h2>
+             <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Tên của bạn:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Feedback:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Gửi</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cửa hàng DVD BK. Địa chỉ: Số 1 Đại Cồ Việt, Hà Nội</p>
+        <p>Điện thoại: 0123-456-789 | Email: info@DVDBK.com</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
